@@ -1,0 +1,21 @@
+.productos--grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  div {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.message-error {
+  background-color: red;
+  color: white;
+  opacity: 0;
+  transition: all linear 0.5s;
+
+  &.invalid {
+    opacity: 1;
+  }
+}
